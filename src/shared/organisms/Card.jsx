@@ -18,7 +18,7 @@ export const Card = (
     };
 
     const allAnswers = () => {
-        return [...answers, correctAnswer];
+        return [...answers, correctAnswer].sort(() => Math.random() - 0.5);
     };
 
     return (
